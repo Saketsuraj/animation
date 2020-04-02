@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+            background: linear-gradient(rgb(65, 65, 204), yellow);
+        }
+
+        .alert-box {
+            width: 50vw;
+            height: 80px;
+            position: relative;
+            margin: 10px auto;
+            border: 2px solid black;
+            display: block;
+            float: left;
+            background-color: brown;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            padding: 5px 5px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            float: right;
+        }
+
+        button:hover {
+            background-color: crimson;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .alert-box-6 {
+            width: 50vw;
+            position: relative;
+            margin: 10px auto;
+            background-color: blue;
+            border: 2px solid black;
+            display: block;
+            float: right;
+            opacity: 0;
+        }
+
+        .alert-box-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article class="alert-box" id="alert-box-urgent">
+        <h1>1</h1>
+        <button id="close-alert-box-urgent" style="float: right;">Remove</button>
+    </article>
+
+    <article class="alert-box" id="alert-box-news">
+        <h1>2</h1>
+        <button id="close-alert-box-news">Remove</button>
+    </article>
+
+    <article class="alert-box" id="alert-box-3">
+        <h1>3</h1>
+        <button id="close-alert-box-3">Remove</button>
+    </article>
+
+    <article class="alert-box" id="alert-box-4">
+        <h1>4</h1>
+        <button id="close-alert-box-4">Remove</button>
+    </article>
+
+    <article class="alert-box" id="alert-box-5">
+        <h1>5</h1>
+        <button id="close-alert-box-5">Remove</button>
+    </article>
+
+    <article class="alert-box-6" id="alert-box-6">
+        <h1>6</h1>
+    </article>
+
+    <article class="alert-box-6" id="alert-box-7">
+        <h1>7</h1>
+    </article>
+
+    <article class="alert-box-6" id="alert-box-8">
+        <h1>8</h1>
+    </article>
+
+    <article class="alert-box-6" id="alert-box-9">
+        <h1>9</h1>
+    </article>
+
+    <article class="alert-box-6" id="alert-box-10">
+        <h1>10</h1>
+    </article>
+
+    <script>
+        $(document).ready(function () {
+            $("#close-alert-box-urgent").click(function () {
+                $("#alert-box-urgent").animate({
+                    'margin-left': "50%",
+                    'opacity': '0'
+                }, 1000);
+                $("#alert-box-6").animate({
+                    'margin-right': "50%",
+                    'opacity': '1'
+                }, 1000);
+            });
+            $("#close-alert-box-news").click(function () {
+                $("#alert-box-news").animate({
+                    'margin-left': "50%",
+                    'opacity': '0'
+                }, 1000);
+                $("#alert-box-7").animate({
+                    'margin-right': "50%",
+                    'opacity': '1'
+                }, 1000);
+            });
+            $("#close-alert-box-3").click(function () {
+                $("#alert-box-3").animate({
+                    'margin-left': "50%",
+                    'opacity': '0'
+                }, 1000);
+                $("#alert-box-8").animate({
+                    'margin-right': "50%",
+                    'opacity': '1'
+                }, 1000);
+            });
+            $("#close-alert-box-4").click(function () {
+                $("#alert-box-4").animate({
+                    'margin-left': "50%",
+                    'opacity': '0'
+                }, 1000);
+                $("#alert-box-9").animate({
+                    'margin-right': "50%",
+                    'opacity': '1'
+                }, 1000);
+            });
+            $("#close-alert-box-5").click(function () {
+                $("#alert-box-5").animate({
+                    'margin-left': "50%",
+                    'opacity': '0'
+                }, 1000);
+                $("#alert-box-10").animate({
+                    'margin-right': "50%",
+                    'opacity': '1'
+                }, 1000);
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>
